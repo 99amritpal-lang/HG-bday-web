@@ -1,86 +1,231 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.s1 {font: 12.0px 'Apple Color Emoji'}
-  </style>
+<meta charset="UTF-8">
+<title>Happy Birthday ❤️</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#ffe6f0, #fff0f5);
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Main card */
+  .card {
+    background: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: fadeIn 2s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Sparkly text */
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ff4d88, #ffb6c1, #ff69b4, #ff4d88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sparkle 3s linear infinite;
+  }
+
+  @keyframes sparkle {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  p {
+    font-size: 18px;
+    color: #444;
+    margin: 15px 0;
+  }
+
+  img.mainPhoto {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+    animation: fadeIn 3s ease;
+  }
+
+  audio {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #countdown {
+    font-size: 20px;
+    color: #ff4d88;
+    margin: 15px 0;
+    font-weight: bold;
+  }
+
+  /* Hidden love note */
+  #loveNote {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4d88;
+    background: #fff0f5;
+    padding: 15px;
+    border-radius: 15px;
+    animation: fadeIn 2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Confetti and hearts */
+  .confetti, .heart {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    animation: fall 5s linear infinite;
+    opacity: 0.8;
+    z-index: 0;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(-10px) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+  }
+
+  .heart {
+    width: 15px;
+    height: 15px;
+    background: pink;
+    transform: rotate(45deg);
+  }
+
+  .heart:before, .heart:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: pink;
+    border-radius: 50%;
+  }
+
+  .heart:before { top: -7.5px; left: 0; }
+  .heart:after { left: 7.5px; top: 0; }
+
+  button {
+    margin-top: 15px;
+    background: #ff4d88;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* Side photos */
+  .sidePhoto {
+    position: fixed;
+    width: 100px;
+    border-radius: 15px;
+    opacity: 0.9;
+    z-index: 0;
+    animation: floatUpDown 6s ease-in-out infinite alternate;
+  }
+
+  .sidePhoto.left { left: 10px; top: 100px; }
+  .sidePhoto.right { right: 10px; top: 150px; }
+
+  @keyframes floatUpDown {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Happy Birthday <span class="s1">❤️</span>&lt;Hasvin!&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(#ffd6e8, #fff0f5);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 500px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 20px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #ff4d88;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #444;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>audio {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Happy Birthday <span class="s1">🎉</span>&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>I made this little website just for you.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>I hope today is full of smiles, laughs,</p>
-<p class="p1"><span class="Apple-converted-space">      </span>and everything you deserve <span class="s1">❤️</span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src=“HnA.jpeg" alt="A special memory"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>You mean a lot to me.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Happy Birthday <span class="s1">🎂</span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;audio controls&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;source src="mfgabhru.mp3" type="audio/mpeg"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/audio&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<!-- Floating side photos -->
+<img src="H1.jpg" class="sidePhoto left">
+<img src="H5.jpg" class="sidePhoto right">
+
+<div class="card">
+  <h1>Happy Birthday Gillies🎉</h1>
+  <p>I made this little website just for you. I hope today is full of smiles, laughs, and everything you deserve ❤️</p>
+
+  <!-- Main photo -->
+  <img src="H6.jpg" class="mainPhoto" alt="A special memory">
+
+  <p>You mean a lot to me. Happy 26th Birthday 🎂</p>
+
+  <!-- Music -->
+  <audio controls>
+    <source src="mfgabhru.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Countdown -->
+  <div id="countdown"></div>
+
+  <!-- Hidden love note -->
+  <button onclick="showNote()">Click to read a secret love note 💌</button>
+  <div id="loveNote">I just want you to know that there is not a SINGLE moment where I do not think about you. You are the girl of my dreams and you deserve the best this world has to offer. I truly truly love you with all my heart. Meh tenu bot pyaar kaarda ha. Can't wait to hold, smell, and kiss you❤️</div>
+</div>
+
+<script>
+  // Confetti
+  for(let i=0;i<30;i++){
+    let confetti = document.createElement('div');
+    confetti.className = 'confetti';
+    confetti.style.left = Math.random() * 100 + 'vw';
+    confetti.style.background = `hsl(${Math.random()*360}, 70%, 70%)`;
+    confetti.style.animationDelay = Math.random() * 5 + 's';
+    document.body.appendChild(confetti);
+  }
+
+  // Floating hearts
+  for(let i=0;i<20;i++){
+    let heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDelay = Math.random() * 5 + 's';
+    heart.style.background = `hsl(${Math.random()*360}, 70%, 70%)`;
+    document.body.appendChild(heart);
+  }
+
+  // Countdown Timer
+  const birthday = new Date("2026-01-08T00:00:00").getTime(); // CHANGE THIS DATE
+  const countdownEl = document.getElementById("countdown");
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = birthday - now;
+
+    if(distance < 0){
+      countdownEl.innerHTML = "🎉 It's her birthday! 🎉";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000*60*60*24));
+    const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+    countdownEl.innerHTML = `Countdown: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }, 1000);
+
+  // Show hidden note
+  function showNote(){
+    document.getElementById("loveNote").style.display = "block";
+  }
+</script>
+
 </body>
 </html>
+
